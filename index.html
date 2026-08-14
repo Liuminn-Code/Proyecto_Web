@@ -16,9 +16,59 @@
         </nav>  
     </header>
     <main>
-        <section id="inicio"></section>
-        <section id="caracteristicas"></section>
-        <section id="contacto"></section>
+        <section id="inicio" class="hero">
+            <h2>Inicio</h2>
+            <div class="hero__contenido">
+                <p>Bienvenido a nuestro sitio web. Aquí encontrarás información sobre el curso y cómo contactarnos.</p>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="hero">
+            <h2>Características</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unidad 1 </td>
+                        <td>Creación de frontend con HTML y CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 2</td>
+                        <td>Desarrollo de funcionalidades interactivas con JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 3</td>
+                        <td>Creación de un sitio web completo.</td>
+                </tbody>
+            </table>        
+        </section>
+
+
+        <section id="contacto" class="hero">
+            <h2>Contacto</h2>
+            <div class="contacto__contenido">
+                <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
+                <form action="/contacto" method="post">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+        </section>
     </main>
     <footer>
 
