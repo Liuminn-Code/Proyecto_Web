@@ -3,6 +3,22 @@
     margin: 0;
     padding: 0;
 }
+  .contenedor_card{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .card{
+    flex: 1 1 300px;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1F2937;
+      line-height: 1.5;
+    }
+      
   .nav__lista {
   display: flex;
   justify-content: flex-end;
@@ -11,28 +27,59 @@
   list-style: none; 
 
   }
+  main {
+      background: #F7F9FB;
+      border: 1px solid #E1E6ED;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
   .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
     height: 60vh;
-    background-color: #f4f4f4;
+    background-color: #4873a8;
     text-align: center;
 }
 
-  .layout {
+  .pagina {
     display: grid;
     gap: 1.5rem;
     grid-template-areas:
     "header"
     "hero"
-   "servicios"
+   "caracteristicas"
     "contacto"
     "footer";
 }
+footer {
+      background: #4873a8;
+      color: #AAB6CC;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 8px;
+    }
   .header { grid-area: header; }
   .hero { grid-area: hero; }
-  .caracteristicas { grid-area: servicios; }
+  .caracteristicas { grid-area: caracteristicas; }
   .contacto { grid-area: contacto; }
   .footer { grid-area: footer; }
+  
+  .pagina {grid-template-columns:1fr;}
+@media (min-width: 768px) {
+.layout {
+grid-template-areas:
+"header header"
+"hero hero"
+"servicios servicios"
+"contacto contacto"
+"footer footer";
+}
+.servicios { grid-template-columns: repeat(2, 1fr); }
+}
+/* Escritorio en adelante */
+@media (min-width: 1024px) {
+.servicios { grid-template-columns: repeat(3, 1fr); }
+}
+  

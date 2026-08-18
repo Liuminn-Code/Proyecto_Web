@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="layout">
+    <div class="pagina">
     <header class="header">  
         <nav class="nav">
             <ul class="nav__lista">
@@ -16,37 +16,32 @@
             </ul>
         </nav>  
     </header>
-    <main>
+
         <section id="inicio" class="hero">
             <h2>Inicio</h2>
             <div class="hero__contenido">
                 <p>Bienvenido a nuestro sitio web. Aquí encontrarás información sobre el curso y cómo contactarnos.</p>
             </div>
         </section>
-            <section id="caracteristicas" class="caracteristicas">
-            <h2>Características</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Unidad</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Unidad 1 </td>
-                        <td>Creación de frontend con HTML y CSS.</td>
-                    </tr>
-                    <tr>
-                        <td>Unidad 2</td>
-                        <td>Desarrollo de funcionalidades interactivas con JavaScript.</td>
-                    </tr>
-                    <tr>
-                        <td>Unidad 3</td>
-                        <td>Creación de un sitio web completo.</td>
-                    </tr>
-                </tbody>
-            </table>        
+        <section id="caracteristicas" class="caracteristicas">
+            <h2>Características del Proyecto</h2>
+            <div class="contenedor-cards">
+                <article class="card">
+                    <h3>Unidad 1</h3>
+                    <p>Creación de frontend con HTML y CSS.</p>
+                </article>
+        
+                <article class="card">
+                    <h3>Unidad 2</h3>
+                    <p>Desarrollo de funcionalidades interactivas con JavaScript.</p>
+                </article>
+        
+                <article class="card">
+                    <h3>Unidad 3</h3>
+                    <p>Creación de un sitio web completo.</p>
+                </article>
+            
+            
         </section>
 
 
@@ -69,9 +64,11 @@
                     <button type="submit">Enviar</button>
                     </fieldset>
                 </form>
+            </div>
         </section>
-    </main>
     <footer class="footer">    
+        <p>&copy; 2026 — Desarrollo de Aplicaciones Web</p>
+
     </footer>
     </div>
 </body>
