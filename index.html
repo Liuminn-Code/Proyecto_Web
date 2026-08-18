@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>  
+    <div class="layout">
+    <header class="header">  
         <nav class="nav">
             <ul class="nav__lista">
                 <li><a href="#inicio">Inicio</a></li>
@@ -22,7 +23,7 @@
                 <p>Bienvenido a nuestro sitio web. Aquí encontrarás información sobre el curso y cómo contactarnos.</p>
             </div>
         </section>
-            <section id="caracteristicas" class="hero">
+            <section id="caracteristicas" class="caracteristicas">
             <h2>Características</h2>
             <table>
                 <thead>
@@ -43,14 +44,13 @@
                     <tr>
                         <td>Unidad 3</td>
                         <td>Creación de un sitio web completo.</td>
+                    </tr>
                 </tbody>
             </table>        
         </section>
-    </div>
-</section>
 
 
-        <section id="contacto" class="hero">
+        <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <div class="contacto__contenido">
                 <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
@@ -64,15 +64,15 @@
                     <input type="email" id="email" name="email" required>
 
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
 
                     <button type="submit">Enviar</button>
                     </fieldset>
                 </form>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">    
     </footer>
+    </div>
 </body>
 </html>

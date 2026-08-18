@@ -20,3 +20,19 @@
     background-color: #f4f4f4;
     text-align: center;
 }
+
+  .layout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+    "header"
+    "hero"
+   "servicios"
+    "contacto"
+    "footer";
+}
+  .header { grid-area: header; }
+  .hero { grid-area: hero; }
+  .caracteristicas { grid-area: servicios; }
+  .contacto { grid-area: contacto; }
+  .footer { grid-area: footer; }
